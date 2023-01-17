@@ -1,0 +1,37 @@
+.playingCard {
+  position: relative;
+}
+
+.playingCard img {
+  width: 100%;
+  display: block;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+/*front position absolute relative to playing card - sits behind card back*/
+/*transition to make card appear as if it is fipping*/
+.playingCard .matchingPic {
+  transform: rotateY(90deg);
+  position: absolute;
+  transition: all ease-in 0.2s;
+}
+/*hides back of card which is hidden underneath*/
+.flipped .matchingPic {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.matchingPic {
+  background-color: aquamarine;
+}
+
+.playingCard .cardBack {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .cardBack {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}

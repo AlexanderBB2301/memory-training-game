@@ -1,0 +1,18 @@
+.App {
+  max-width: 850px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.cardContainerGrid {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
